@@ -14,14 +14,7 @@ function getConfiguration(config)
 
 function getEndpoints(deviceAddress, endpoints)
 {
-  // Esta función le permite indicar la configuración inicial de los endpoints
-  // cuando se crea un dispositivo de este modelo. Esto mejora significativamente 
-  // la experiencia del usuario final, ya que permite a la plataforma crear 
-  // todos los endpoints incluidos en el dispositivo automáticamente cuando se 
-  // crea el dispositivo.
 
-  // En el código siguiente, se crean dos endpoints. El primero es un sensor de 
-  // temperatura, mientras que el segundo es un sensor de dióxido de carbono.
 
     endpoints.addEndpoint("1", "Voltage", endpointType.voltageSensor);
     endpoints.addEndpoint("2", "Corriente", endpointType.currentSensor);
@@ -29,11 +22,7 @@ function getEndpoints(deviceAddress, endpoints)
     endpoints.addEndpoint("4", "potencia Activa", endpointType.activePowerSensor);
     endpoints.addEndpoint("5", "potencia Reactiva", endpointType.reactivePowerSensor);
     endpoints.addEndpoint("6", "potencia Aparente", endpointType.apparentPowerSensor);
-  //  endpoints.addEndpoint("7", "humedad", endpointType.humiditySensor);
-  //  endpoints.addEndpoint("8", "Temperatura", endpointType.temperatureSensor);
-
-
-}
+ }
 
 function validateDeviceAddress(address, result)
 {
